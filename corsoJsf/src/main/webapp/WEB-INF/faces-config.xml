@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee web-facesconfig_2_1.xsd"
+	version="2.1">
+
+
+	<managed-bean>
+		<managed-bean-name>utente</managed-bean-name>
+		<managed-bean-class>com.lenzi.fra.corsoJsf.session.bean.Utente
+		</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>benvenuto</managed-bean-name>
+		<managed-bean-class>com.lenzi.fra.corsoJsf.page.bean.Benvenuto
+		</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<property-name>utente</property-name>
+			<value>#{utente}</value>
+		</managed-property>
+	</managed-bean>
+
+</faces-config>
