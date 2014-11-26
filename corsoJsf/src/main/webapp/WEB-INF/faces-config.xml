@@ -4,6 +4,14 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee web-facesconfig_2_1.xsd"
 	version="2.1">
+	
+	<!-- Rich Faces -->
+	
+	<application>
+		<view-handler>org.ajax4jsf.application.AjaxViewHandler</view-handler>
+	</application>
+
+	<!-- Rich Faces Fine -->
 
 
 	<managed-bean>

@@ -4,7 +4,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:fra="http://lenzi.com/facelets">
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:a4j="http://richfaces.org/a4j" >
 
 <head>
 </head>
@@ -12,15 +13,10 @@
 	<ui:composition template="/templates/template.xhtml">
 		<ui:define name="content">
 			<h:form>
-				<h2>Configurazione Utente</h2>
+				<h2>Calendario Richfaces</h2>
 				<br />
-				<h:outputLabel value="Nome" />
-				<h:inputText value="#{utente.nome}" />
-				<br />
-				<h:outputLabel value="Cognome" />
-				<h:inputText value="#{utente.cognome}" />
-				<br />
-				<fra:confirmReset okLabel="Conferma" cancelLabel="Cancella" />
+				<rich:calendar  >
+				</rich:calendar>
 			</h:form>
 		</ui:define>
 	</ui:composition>
