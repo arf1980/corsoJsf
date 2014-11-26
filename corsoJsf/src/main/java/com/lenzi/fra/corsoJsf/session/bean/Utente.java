@@ -7,6 +7,8 @@ public class Utente {
 	private String cognome;
 	private boolean logged = false;
 	
+	private int livello;
+	
 	public boolean isValido(){
 		return StringUtils.isNotBlank(getNome()) && StringUtils.isNotBlank(getCognome());
 	}
@@ -29,7 +31,12 @@ public class Utente {
 	public void setLogged(boolean logged) {
 		this.logged = logged;
 	}
-	
+	public int getLivello() {
+		return livello;
+	}
+	public void setLivello(int livello) {
+		this.livello = livello;
+	}
 	
 	
 }
