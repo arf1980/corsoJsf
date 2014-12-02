@@ -3,7 +3,8 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:ui="http://java.sun.com/jsf/facelets">
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:fra="http://lenzi.com/facelets">
 
 <head>
 </head>
@@ -11,6 +12,14 @@
 	<ui:composition template="/templates/template.xhtml">
 		<ui:define name="content">
 			<h2>Ciao #{utente.nome} #{utente.cognome}</h2>
+			<br />
+			<br />
+
+			<fra:ajaxButton id="ajaxButton" value="AJAX BUTTON" imageToken="aggiorna" ></fra:ajaxButton>
+			<br />
+			<br />
+			<fra:button id="button" value="BUTTON" imageToken="aggiorna"></fra:button>
+
 		</ui:define>
 	</ui:composition>
 </body>

@@ -3,9 +3,22 @@
 "-//Sun Microsystems, Inc.//DTD Facelet Taglib 1.0//EN"
 "http://java.sun.com/dtd/facelet-taglib_1_0.dtd">
 <facelet-taglib>
-   <namespace>http://lenzi.com/facelets</namespace>
-   <tag>
-      <tag-name>confirmReset</tag-name>
-      <source>confirmReset.xhtml</source>
-   </tag>
+	<namespace>http://lenzi.com/facelets</namespace>
+	<tag>
+		<tag-name>confirmReset</tag-name>
+		<source>confirmReset.xhtml</source>
+	</tag>
+
+	<tag>
+		<tag-name>button</tag-name>
+		<source>button.xhtml</source>
+	</tag>
+
+	<tag>
+		<tag-name>ajaxButton</tag-name>
+		<component>
+			<component-type>fra.AjaxButton</component-type>
+		</component>
+	</tag>
+
 </facelet-taglib>
