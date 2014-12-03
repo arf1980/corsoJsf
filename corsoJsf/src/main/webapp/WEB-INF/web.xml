@@ -5,14 +5,12 @@
 	version="2.5">
 	<display-name>corsoJsf</display-name>
 
-
-
 	<context-param>
 		<param-name>javax.faces.DEFAULT_SUFFIX</param-name>
 		<param-value>.xhtml</param-value>
 	</context-param>
 	<context-param>
-		<param-name>javax.faces.FACELETS_LIBRARIES</param-name>
+		<param-name>facelets.LIBRARIES</param-name>
 		<param-value>/tags/myTaglib.xml</param-value>
 	</context-param>
 
@@ -38,7 +36,7 @@
 
 	<context-param>
 		<param-name>org.richfaces.SKIN</param-name>
-		<param-value>blueSky</param-value>
+		<param-value>wine</param-value>
 	</context-param>
 
 	<context-param>
