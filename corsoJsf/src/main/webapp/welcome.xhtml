@@ -11,15 +11,22 @@
 <body bgcolor="white">
 	<ui:composition template="/templates/template.xhtml">
 		<ui:define name="content">
-			<h2>Ciao #{utente.nome} #{utente.cognome}</h2>
-			<br />
-			<br />
-
-			<fra:ajaxButton id="ajaxButton" value="AJAX BUTTON" imageToken="aggiorna" ></fra:ajaxButton>
-			<br />
-			<br />
-			<fra:button id="button" value="BUTTON" imageToken="aggiorna"></fra:button>
-
+			<h:form>
+				<h2>Ciao #{utente.nome} #{utente.cognome}</h2>
+				<br />
+				<br />
+			AJAX
+			<fra:ajaxButton id="ajaxButton" value="AJAX BUTTON"
+					action="#{benvenuto.selectUtenti}" imageToken="aggiorna"></fra:ajaxButton>
+				<br />
+				<br />
+			HTML
+			<fra:button id="button" value="BUTTON"
+					action="#{utenteDao.utenti}" imageToken="aggiorna"></fra:button>
+				<br />
+				<br />
+				<h:commandButton value="Select" action="#{benvenuto.selectUtenti}" />
+			</h:form>
 		</ui:define>
 	</ui:composition>
 </body>

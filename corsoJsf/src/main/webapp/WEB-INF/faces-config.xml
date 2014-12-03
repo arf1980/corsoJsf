@@ -31,16 +31,7 @@
 
 	</managed-bean>
 
-	<managed-bean>
-		<managed-bean-name>benvenuto</managed-bean-name>
-		<managed-bean-class>com.lenzi.fra.corsoJsf.page.bean.Benvenuto
-		</managed-bean-class>
-		<managed-bean-scope>session</managed-bean-scope>
-		<managed-property>
-			<property-name>utente</property-name>
-			<value>#{utente}</value>
-		</managed-property>
-	</managed-bean>
+
 
 
 	<navigation-rule>
