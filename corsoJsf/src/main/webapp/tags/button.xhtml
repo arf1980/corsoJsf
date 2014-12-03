@@ -1,0 +1,26 @@
+
+<ui:component xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:sf="http://www.springframework.org/tags/faces"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:febv="http://addvalue.it/febv">
+
+	<febv:buttonTagHandler>
+		<c:set var="febvButtonDisabled"
+			value="#{empty disabled ? false : disabled}" />
+		<h:commandButton id="#{id}"
+			image="/img/btn/#{empty imageLevel ? 'b1' : imageLevel}#{imageToken}#{febvButtonDisabled ? 'disablede.gif' : 'e.gif'}"
+			action="#{calculatedAction}"
+			immediate="#{empty immediate ? false : immediate}"
+			disabled="#{febvButtonDisabled}"
+			onmouseover="FEBV.onFebvButtonMouseOver(this);"
+			onmouseout="FEBV.onFebvButtonMouseOut(this);"
+			styleClass="#{empty styleClass ? '' : styleClass}"
+			onclick="#{empty onclick ? '' : onclick}"
+			rendered="#{empty rendered ? 'true' : rendered}" />
+	</febv:buttonTagHandler>
+</ui:component>
