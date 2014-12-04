@@ -6,8 +6,8 @@ import org.ajax4jsf.component.html.HtmlAjaxCommandButton;
 
 public class AjaxButton extends HtmlAjaxCommandButton implements FraUiComponent {
 
-	private static final String ON_MOUSE_OUT_DEFAULT_VALUE = "FEBV.onFebvButtonMouseOut(this);";
-	private static final String ON_MOUSE_OVER_DEFAULT_VALUE = "FEBV.onFebvButtonMouseOver(this);";
+	private static final String ON_MOUSE_OUT_DEFAULT_VALUE = "FRA.onFebvButtonMouseOut(this);";
+	private static final String ON_MOUSE_OVER_DEFAULT_VALUE = "FRA.onFebvButtonMouseOver(this);";
 	private static final String EVENTS_QUEUE_DEFAULT_VALUE = "mainProcessQueue";
 	private static final String IMAGE_LEVEL_DEFAULT_VALUE = "b1";
 
